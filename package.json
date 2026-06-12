@@ -1,0 +1,30 @@
+{
+  "name": "monorepo-mfe-practice",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.28.0",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "preview": "turbo run preview --parallel",
+    "preview:e2e": "turbo run preview --parallel",
+    "e2e": "pnpm build && playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "jsdom": "latest",
+    "turbo": "latest",
+    "typescript": "^5.9.3",
+    "vite": "latest",
+    "vitest": "latest"
+  }
+}
